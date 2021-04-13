@@ -39,3 +39,15 @@ seed_1 = 0;
 seed_2 = 1;
 seed_3 = 2;
 seed_4 = 3;
+
+%% rates for each input
+rate_1 = 0.3;
+rate_2 = 0.3;
+rate_3 = 0.3;
+rate_4 = 0.3;
+
+% phase
+phase_1 = 0;
+phase_2 = 0;
+phase_3 = 0;
+phase_4 = 0;

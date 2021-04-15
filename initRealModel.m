@@ -1,38 +1,38 @@
 %% set sample time
 dt = 1/1000;
 
-%% set flow rates
-Q1 = 2000;
-Q2 = 2000;
-Q3 = 2000;
-Q4 = 2000;
+%% set flow rates 0.5 uL/min
+Q1 = 0.5*60*1000000000;
+Q2 = 0.5*60*1000000000;
+Q3 = 0.5*60*1000000000;
+Q4 = 0.5*60*1000000000;
 
 %% pipe widths
-W.A = 1;
-W.B = 1;
-W.C = 1;
-W.D = 1;
-W.E = 1;
-W.F = 1;
-W.G = 1;
+W.A = 300;
+W.B = 300;
+W.C = 300;
+W.D = 300;
+W.E = 300;
+W.F = 300;
+W.G = 300;
 
 %% pipe heights
-H.A = 1;
-H.B = 1;
-H.C = 1;
-H.D = 1;
-H.E = 1;
-H.F = 1;
-H.G = 1;
+H.A = 250;
+H.B = 250;
+H.C = 250;
+H.D = 250;
+H.E = 250;
+H.F = 250;
+H.G = 250;
 
 %% pipe length
-L.A = 10;
-L.B = 10;
-L.C = 10;
-L.D = 10;
-L.E = 10;
-L.F = 10;
-L.G = 10;
+L.A = 10000;
+L.B = 10000;
+L.C = 30000;
+L.D = 10000;
+L.E = 10000;
+L.F = 30000;
+L.G = 10000;
 
 %% droplet in system
 seed_1 = 0;
@@ -48,6 +48,6 @@ rate_4 = 0.3;
 
 % phase
 phase_1 = 0;
-phase_2 = 0;
+phase_2 = 0.1;
 phase_3 = 0;
-phase_4 = 0;
+phase_4 = 0.1;

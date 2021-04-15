@@ -2,24 +2,24 @@
 dt = 1*10^-4;
 
 %% set flow rates
-Q1 = 200;
-Q2 = 200;
+Q1 = 0.5*60*1000000000;
+Q2 = 0.5*60*1000000000;
 
 %% pipe widths
-W_A = 1;1.5;
-W_B = 1;0.5;
-W_C = 1;
+W_A = 300;
+W_B = 300;
+W_C = 300;
 
 
 %% pipe heights
-H_A = 1;1.5;
-H_B = 1;0.5;
-H_C = 1;
+H_A = 250;
+H_B = 250;
+H_C = 250;
 
 %% pipe length
-L_A = 10;
-L_B = 10;
-L_C = 10;
+L_A = 10000;
+L_B = 10000;
+L_C = 30000;
 
 
 %% droplet in system

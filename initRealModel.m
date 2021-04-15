@@ -1,5 +1,6 @@
 %% set sample time
-dt = 1/1000;
+dt =  1*10^-4;
+disable_droplet_faults = 1;
 
 %% set flow rates 0.5 uL/min
 Q1 = 0.5*60*1000000000;
@@ -8,31 +9,31 @@ Q3 = 0.5*60*1000000000;
 Q4 = 0.5*60*1000000000;
 
 %% pipe widths
-W.A = 300;
-W.B = 300;
-W.C = 300;
-W.D = 300;
-W.E = 300;
-W.F = 300;
-W.G = 300;
+W_A = 300;
+W_B = 300;
+W_C = 300;
+W_D = 300;
+W_E = 300;
+W_F = 300;
+W_G = 300;
 
 %% pipe heights
-H.A = 250;
-H.B = 250;
-H.C = 250;
-H.D = 250;
-H.E = 250;
-H.F = 250;
-H.G = 250;
+H_A = 250;
+H_B = 250;
+H_C = 250;
+H_D = 250;
+H_E = 250;
+H_F = 250;
+H_G = 250;
 
 %% pipe length
-L.A = 10000;
-L.B = 10000;
-L.C = 30000;
-L.D = 10000;
-L.E = 10000;
-L.F = 30000;
-L.G = 10000;
+L_A = 10000;
+L_B = 10000;
+L_C = 30000;
+L_D = 10000;
+L_E = 10000;
+L_F = 30000;
+L_G = 10000;
 
 %% droplet in system
 seed_1 = 0;
@@ -40,14 +41,15 @@ seed_2 = 1;
 seed_3 = 2;
 seed_4 = 3;
 
-%% rates for each input
-rate_1 = 0.3;
-rate_2 = 0.3;
-rate_3 = 0.3;
-rate_4 = 0.3;
+%% rates of droplets for each input
+rate_1 = 0.01;
+rate_2 = 0.01;
+rate_3 = 0.01;
+rate_4 = 0.01;
 
-% phase
+% phase of droplet at each input (1,2) nad (3,4) need to be different if
+% pipes are the same
 phase_1 = 0;
-phase_2 = 0.1;
+phase_2 = 0.005;
 phase_3 = 0;
-phase_4 = 0.1;
+phase_4 = 0.005;

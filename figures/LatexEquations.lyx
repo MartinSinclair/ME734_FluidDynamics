@@ -131,5 +131,69 @@ timestep & \Delta t
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T^{T}=(X,\Sigma,\delta,O,o)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\in\mathbb{\mathbb{\left\{ T\mathrm{,}F\right\} }}\times\mathbb{Z}\times\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta=\begin{cases}
+\dot{x}=q_{linear}\Delta t & continuous\:states\\
+\Delta n=\begin{cases}
+-1 & \exists x_{i}>l\\
+1 & add\:droplet\wedge Trap==1\\
+0 & otherwise
+\end{cases} & bypass\:states\\
+\Delta Trap=\begin{cases}
+-1 & \Delta P_{bypass}>\Delta P_{threshold}\\
+1 & add\:droplet\wedge Trap==0\\
+0 & otherwise
+\end{cases} & trap\:state
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma=\begin{cases}
+add\:droplet & E_{in}\\
+remove\:droplet & E_{out}\\
+flowrate & q_{in}\\
+properties & \begin{cases}
+pressure\:(inlet,outlet) & P_{in},P_{out}\\
+channel\:dimentions & h,l,w\\
+timestep & \Delta t\\
+threshold & P_{threshold}
+\end{cases}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $O=(R_{pipe}\in\mathbb{R},n\in\mathbb{Z},Trap\in\left\{ \mathbb{T\mathrm{,}F}\right\} )$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

@@ -29,4 +29,13 @@ codegen/
 
 # Octave session info
 octave-workspace
+
+# lyx files
 *.lyx~
+
+# figure files
+figures/*.pdf
+figures/*.png
+figures/*.fig
+
+junk/

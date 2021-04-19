@@ -1,5 +1,5 @@
 %% set sample time
-dt =  1*10^-4;
+dt =  1*10^-5;
 disable_droplet_faults = 1;
 
 %% set flow rates 0.5 uL/min
@@ -22,7 +22,7 @@ H_E = 250;
 
 
 %% pipe length
-L_A = 10000;
+L_A = 10000*100;
 L_B = 10000;
 L_C = 10000;
 L_D = 10000;
@@ -43,5 +43,5 @@ phase_1 = 0;
 phase_2 = 0.005;
 
 %% designated trap resistance
-% arbitrary value chosen
-RTrap = 1000;
+% 
+RTrap = 0.0011;
